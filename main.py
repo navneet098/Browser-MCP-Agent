@@ -89,8 +89,9 @@ async def run_mcp_agent(message):
         return f"Error: {str(e)}"
     
 if st.button("Run command", type="primary", use_container_width=True):
-    with st.spinner("Processing your result...."):
-        result = st.session_state.loop.run_until_complete(run_mcp_agent(query))
+     result=query
+    # with st.spinner("Processing your result...."):
+    #     result = st.session_state.loop.run_until_complete(run_mcp_agent(query))
 
     st.markdown("### Response")
     st.markdown(result)
