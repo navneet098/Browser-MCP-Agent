@@ -93,5 +93,5 @@ if st.button("Run command", type="primary", use_container_width=True):
             result=query
     #     result = st.session_state.loop.run_until_complete(run_mcp_agent(query))
 
-    st.markdown("### Response")
-    st.markdown(result)
+st.markdown("### Response")
+st.markdown(result)
